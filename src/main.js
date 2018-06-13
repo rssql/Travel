@@ -8,6 +8,12 @@ import 'style/border.css'  /* 解决移动端1px边框问题*/
 import 'style/iconfont.css'
 /*某些机型浏览器移动端点击(click)延迟300ms的问题   npm install fastclick --save*/
 import fastClick from 'fastclick'
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// require styles
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 
